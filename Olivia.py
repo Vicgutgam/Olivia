@@ -39,32 +39,14 @@ st.set_page_config(
 
 # Imagen para el fondo de pantalla
 
-def add_bg_from_local(image_file):
-        with open(image_file, "rb") as image_file:
-            encoded_string = base64.b64encode(image_file.read())
-        st.markdown(
-            f"""
-        <style>
-        .stApp {{
-            background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-            background-size: cover
-        }}
-        </style>
-        """,
-            unsafe_allow_html=True
-        )
-        
-add_bg_from_local('fondo.jpg')
 
-## Imágenes desde la carpeta
-imagen1 = Image.open("C:/Users/Usuario/Desktop/Olivia/italianrestaurant.png")
 
 ### sidebar
 
 top_sidebar_placeholder = st.sidebar.empty()
 top_sidebar_placeholder.markdown('''
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Victor-Analyst/refs/heads/main/bilder/portada.jpg?token=GHSAT0AAAAAACXPZG5MLQWWR4XXNVGV4HDUZXVVP2A" width="100%" alt="Akkurat">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/fondo.jpg" width="100%" alt="Olivia">
   <br>
 </p>
 ''', unsafe_allow_html=True)
@@ -81,7 +63,18 @@ with st.spinner('Un attimo per favore'):
 
 ### What is Olivia ?
     if page == 'What is Olivia?':
-        st.image(imagen, caption="imagen1", use_column_width=True)
+        st.markdown('''
+                     <p align="center">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/fondo.jpg" width="30%" alt="">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+        st.markdown('''
+                     <p align="center">
+  <img src="" width="30%" alt="Nærmere Italia kommer du ikke">
+  <br>
+</p>
+''', unsafe_allow_html=True)
         st.subheader('What is Olivia?')
         st.markdown("#### The origins of Oliva")
 
@@ -101,21 +94,26 @@ with st.spinner('Un attimo per favore'):
         st.markdown("####  History, culture, Geography, etc. ")
 
 
-### Something about Italy?
-    elif page == 'Something about Italy?':
+### The wines?
+    elif page == 'The wines':
         st.markdown('''
                      <p align="center">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Victor-Analyst/refs/heads/main/bilder/jeg.jpeg?token=GHSAT0AAAAAACXPZG5NORLLY6HD74Z7A7IYZXVVNTA" width="30%" alt="Italia TEST">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/wine.png" width="30%" alt="Wines TEST">
   <br>
 </p>
 ''', unsafe_allow_html=True)
-        st.subheader('What do you know about Italy?')
-        st.markdown("####  History, culture, Geography, etc. ")
+        st.subheader('How to become a wine expert?')
+        st.markdown("##  sommelier course ")
+        st.markdown("##  A brief introduction to what you should know about wines. ")
+        st.markdown("##  What wines do we have? ")
 
 
-### The wines?
-    elif page == 'The wines?':
-        st.markdown('''
+### The Food
+    elif page == 'Our food':
+        about_selection = st.sidebar.radio('', ['Intolerances and Allergies', 'Starters', 'Fresh from the oven', 'Fresh as a cucumber', 'From the stove to the plate', 'Desserts' ])
+            if page == 'Intolerances and Allergies':
+                st.markdown("# What is the difference between an allergy and an intolerance?")
+                st.markdown('''
                      <p align="center">
   <img src="https://raw.githubusercontent.com/Vicgutgam/Victor-Analyst/refs/heads/main/bilder/jeg.jpeg?token=GHSAT0AAAAAACXPZG5NORLLY6HD74Z7A7IYZXVVNTA" width="30%" alt="Wines TEST">
   <br>
@@ -125,3 +123,6 @@ with st.spinner('Un attimo per favore'):
         st.markdown("##  sommelier course ")
         st.markdown("##  A brief introduction to what you should know about wines. ")
         st.markdown("##  What wines do we have? ")
+
+
+
