@@ -32,7 +32,7 @@ pdf_data = response.content
 
 # Configuración de la página
 st.set_page_config(
-    page_title='Olivia_training',
+    page_title='Olivia Academy',
     page_icon="",
     layout='wide', )
 
@@ -102,27 +102,27 @@ with st.spinner('Un attimo per favore'):
   <br>
 </p>
 ''', unsafe_allow_html=True)
-        st.subheader('How to become a wine expert?')
-        st.markdown("##  sommelier course ")
-        st.markdown("##  A brief introduction to what you should know about wines. ")
-        st.markdown("##  What wines do we have? ")
+        st.subheader('# How to become a wine expert?')
+        st.markdown("###  sommelier course ")
+        st.markdown("### A brief introduction to what you should know about wines. ")
+        st.markdown("###  What wines do we have? ")
 
 
 ### The Food
     elif page == 'Our food':
         about_selection = st.sidebar.radio('', ['Intolerances and Allergies', 'Starters', 'Fresh from the oven', 'Fresh as a cucumber', 'From the stove to the plate', 'Desserts' ])
-            if page == 'Intolerances and Allergies':
-                st.markdown("# What is the difference between an allergy and an intolerance?")
-                st.markdown('''
+        if about_selection == 'Intolerances and Allergies':
+            st.markdown('''
                      <p align="center">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Victor-Analyst/refs/heads/main/bilder/jeg.jpeg?token=GHSAT0AAAAAACXPZG5NORLLY6HD74Z7A7IYZXVVNTA" width="30%" alt="Wines TEST">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/allergy.jpg" width="30%" alt="Wines TEST">
   <br>
 </p>
 ''', unsafe_allow_html=True)
-        st.subheader('How to become a wine expert?')
-        st.markdown("##  sommelier course ")
-        st.markdown("##  A brief introduction to what you should know about wines. ")
-        st.markdown("##  What wines do we have? ")
+        st.subheader('# Intolerances')
+        st.markdown("###  ----- ")
+        st.subheader('# Allergies')
+        st.markdown("### -------. ")
+        st.subheader('# Others')
 
 
 
