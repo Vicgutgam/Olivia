@@ -12,21 +12,111 @@ from PIL import Image
 #El request me va a ayudar a importar el archivo de la URL y así permitirme descargarme el archivo una vez pulse el botón
 import requests
 
+### Games
+questions = [
+    {
+        "question": "What is the main grape used in red Bordeaux wines?",
+        "options": ["Merlot", "Pinot Noir", "Zinfandel"],
+        "answer": "Merlot"
+    },
+    {
+        "question": "Which country is the largest producer of wine?",
+        "options": ["France", "Italy", "Spain"],
+        "answer": "Italy"
+    },
+    {
+        "question": "What does 'terroir' refer to in wine?",
+        "options": ["A wine's age", "The region’s environmental factors", "Fermentation method"],
+        "answer": "The region’s environmental factors"
+    },
+    {
+        "question": "Which of the following is a white grape variety?",
+        "options": ["Chardonnay", "Cabernet Sauvignon", "Syrah"],
+        "answer": "Chardonnay"
+    },
+    {
+        "question": "What is rosé wine made from?",
+        "options": ["White grapes only", "Red grapes with short skin contact", "Mixing red and white wines"],
+        "answer": "Red grapes with short skin contact"
+    },
+    {
+        "question": "Which region is famous for Chianti wine?",
+        "options": ["Tuscany", "Bordeaux", "Rioja"],
+        "answer": "Tuscany"
+    },
+    {
+        "question": "What is the ideal temperature to serve red wine?",
+        "options": ["8°C", "16–18°C", "25°C"],
+        "answer": "16–18°C"
+    },
+    {
+        "question": "Which wine is typically sweet?",
+        "options": ["Port", "Cabernet Sauvignon", "Barolo"],
+        "answer": "Port"
+    },
+    {
+        "question": "Which country is known for Malbec wine?",
+        "options": ["Argentina", "Germany", "Portugal"],
+        "answer": "Argentina"
+    },
+    {
+        "question": "Which of these wines is sparkling?",
+        "options": ["Chablis", "Chianti", "Prosecco"],
+        "answer": "Prosecco"
+    },
+    {
+        "question": "What gives red wine its color?",
+        "options": ["Grape juice", "Grape skins", "Barrel aging"],
+        "answer": "Grape skins"
+    },
+    {
+        "question": "Which wine is traditionally used in cooking coq au vin?",
+        "options": ["White wine", "Red wine", "Rosé"],
+        "answer": "Red wine"
+    },
+    {
+        "question": "Which of the following is not a wine region in France?",
+        "options": ["Champagne", "Napa Valley", "Burgundy"],
+        "answer": "Napa Valley"
+    },
+    {
+        "question": "What does 'vintage' mean in wine?",
+        "options": ["Age of the barrel", "The year the grapes were harvested", "Type of grape used"],
+        "answer": "The year the grapes were harvested"
+    },
+    {
+        "question": "What does a sommelier do?",
+        "options": ["Grows grapes", "Designs wine labels", "Selects and serves wine"],
+        "answer": "Selects and serves wine"
+    },
+    {
+        "question": "Which grape is used to make Rioja wine?",
+        "options": ["Tempranillo", "Cabernet Franc", "Grenache"],
+        "answer": "Tempranillo"
+    },
+    {
+        "question": "Which wine is made in the Champagne region of France?",
+        "options": ["Cava", "Prosecco", "Champagne"],
+        "answer": "Champagne"
+    },
+    {
+        "question": "Which of these wines is fortified?",
+        "options": ["Sherry", "Beaujolais", "Moscato"],
+        "answer": "Sherry"
+    },
+    {
+        "question": "What is the main grape used in Barolo wine?",
+        "options": ["Nebbiolo", "Sangiovese", "Zinfandel"],
+        "answer": "Nebbiolo"
+    },
+    {
+        "question": "What is the alcohol range of most table wines?",
+        "options": ["5–7%", "8–15%", "16–20%"],
+        "answer": "8–15%"
+    }
+]
 
 
-
-
-# Pasos para conseguir el botón de descarga del CV:
-    # 1º Crear una referencia del la url
-    
-link_cv = 'https://raw.githubusercontent.com/Vicgutgam/Victor-Analyst/refs/heads/main/bilder/CV%20Victor%20Guti%C3%A9rrez.png'
-
-    # 2º Crear el botón de descarga en la zona deseada.
-
-    #3º Configurar el botón 
-
-response = requests.get(link_cv)
-pdf_data = response.content
 
 
 
@@ -107,6 +197,31 @@ with st.spinner('Un attimo per favore'):
         st.markdown("### A brief introduction to what you should know about wines. ")
         st.markdown("###  What wines do we have? ")
 
+### Tests?
+    elif page == 'Test':
+        st.markdown('''
+                     <p align="center">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/wine.png" width="30%" alt="Wines TEST">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+        st.title("🍷 Wine Quiz")
+
+
+
+        for i, q in enumerate(questions, 1):
+            st.subheader(f"Question {i}")
+            user_answer = st.radio(q["question"], q["options"], key=i)
+            if st.button(f"Submit Answer {i}", key=f"btn{i}"):
+                if user_answer == q["answer"]:
+                    st.success("Correct! 🎉")
+                    score += 1
+                else:
+                    st.error(f"Incorrect. The correct answer is: {q['answer']}")
+
+        st.markdown("---")
+        st.header(f"Final Score: {score} / {len(questions)}")
+
 
 ### The Food
     elif page == 'Our food':
@@ -123,6 +238,8 @@ with st.spinner('Un attimo per favore'):
         st.subheader('# Allergies')
         st.markdown("### -------. ")
         st.subheader('# Others')
+
+
 
 
 
