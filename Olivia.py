@@ -173,10 +173,10 @@ with st.spinner('Un attimo per favore'):
 
 
 ### Something about Italy?
-    elif page == 'Something about Italy?':
+    elif page == 'Something about Italy':
         st.markdown('''
                      <p align="center">
-  <img src="https://www.mensjournal.com/.image/t_share/MTk3MDg4ODkwMDM5OTAzMzE1/promo_amalfi_gettyimages_aleh-varnishcha.jpg" width="30%" alt="Italia TEST">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Flag_of_Italy.svg.png" width="30%" alt="">
   <br>
 </p>
 ''', unsafe_allow_html=True)
@@ -255,4 +255,11 @@ with st.spinner('Un attimo per favore'):
 
         st.markdown('### Why did I create this?')
         st.markdown('#### I recently had a job interview and I had a bit of a hard time figuring out what my skills are or what projects I have created.')
+        
+        st.markdown('### Is there anything wrong or missing something?')
+        st.markdown("#### I'm creating this website in my spare time, so it's not perfect, but I'd love for it to be. So, if you'd like, you can contact me by email, and together we can make this a better place. " \
+        "vicgutgam@gmail.com.")
+
+
+
 
