@@ -241,5 +241,18 @@ with st.spinner('Un attimo per favore'):
 
 
 
+## my side
 
+    elif page == 'Hi, Víctor is here.':
+        st.markdown('''
+                     <p align="center">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Victor-Analyst/refs/heads/main/bilder/jeg.jpeg?token=GHSAT0AAAAAACXPZG5NORLLY6HD74Z7A7IYZXVVNTA" width="30%" alt="Víctor Gutiérrez Data Analyst">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+        st.subheader('Who Am I?')
+        st.markdown("####  👨‍🏫Hi, my name is Victor and I work at Olivia Ramsalt in Bodø. I created this to facilitate the learning process in a new position at Olivia. I'm doing this because I enjoy working with computers (I'm a data analyst by training) and everything related to education (I was a history teacher in my home country before coming to Norway).")
+
+        st.markdown('### Why did I create this?')
+        st.markdown('#### I recently had a job interview and I had a bit of a hard time figuring out what my skills are or what projects I have created.')
 
