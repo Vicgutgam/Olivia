@@ -181,7 +181,8 @@ with st.spinner('Un attimo per favore'):
 </p>
 ''', unsafe_allow_html=True)
         st.subheader('What do you know about Italy?')
-        st.markdown("####  History, culture, Geography, etc. ")
+        st.markdown("#### Italy is one of the twenty-seven sovereign states that make up the European Union and one of the countries that has had the greatest influence on the development of Western European history, given that its capital, Rome, was the birthplace and development of the Roman Empire.")
+        st.markdown("#### Its geography is highly diverse, both in terms of climate and relief, which favors the development of a wide variety of high-quality products. ")
 
 
 ### The wines?
@@ -246,7 +247,7 @@ with st.spinner('Un attimo per favore'):
     elif page == 'Hi, Víctor is here.':
         st.markdown('''
                      <p align="center">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Victor-Analyst/refs/heads/main/bilder/jeg.jpeg?token=GHSAT0AAAAAACXPZG5NORLLY6HD74Z7A7IYZXVVNTA" width="30%" alt="Víctor Gutiérrez Data Analyst">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/yo.jpg" width="30%" alt="My partner and I receiving the FLUPP of the month award.">
   <br>
 </p>
 ''', unsafe_allow_html=True)
