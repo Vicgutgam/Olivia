@@ -253,6 +253,7 @@ with st.spinner('Un attimo per favore'):
             st.markdown('## Stracciatella')
             st.markdown("###  ----- ")
             st.markdown('## "Grana" Cheese ')
+            st.markdown("###  ----- ")
             st.markdown("## Percorino Romano")
             st.markdown("###  ----- ")
             st.markdown('# Meat section')
@@ -266,9 +267,9 @@ with st.spinner('Un attimo per favore'):
             st.markdown("###  ----- ")
             st.markdown('# Sauces and condiments')
             st.markdown('## Gremolata')
-            st.markdown("###  ----- ")
+            st.markdown("###  Gremolata is a fresh Italian mixture of finely chopped parsley, grated lemon zest and garlic. ")
             st.markdown('## Kampot-pepper')
-            st.markdown("###  ----- ")
+            st.markdown("### It's a unique and versatile spice from Cambodia that can be used in a wide variety of dishes. Its unique flavor and aroma make it a popular ingredient in gourmet cooking, particularly in French and European dishes. ")
                   
       
 
