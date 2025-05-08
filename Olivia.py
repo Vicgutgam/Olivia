@@ -226,7 +226,7 @@ with st.spinner('Un attimo per favore'):
 
 ### The Food
     elif page == 'Our food':
-        about_selection = st.sidebar.radio('', ['Intolerances and Allergies', 'Starters', 'Fresh from the oven', 'Fresh as a cucumber', 'From the stove to the plate', 'Desserts' ])
+        about_selection = st.sidebar.radio('', ['Intolerances and Allergies', "Introduction to our menu", 'Starters', 'Fresh from the oven', 'Fresh as a cucumber', 'From the stove to the plate', 'Desserts' ])
         if about_selection == 'Intolerances and Allergies':
             st.markdown('''
                      <p align="center">
@@ -234,13 +234,43 @@ with st.spinner('Un attimo per favore'):
   <br>
 </p>
 ''', unsafe_allow_html=True)
-        st.subheader('# Intolerances')
-        st.markdown("###  ----- ")
-        st.subheader('# Allergies')
-        st.markdown("### -------. ")
-        st.subheader('# Others')
+            st.subheader('# Intolerances')
+            st.markdown("###  ----- ")
+            st.subheader('# Allergies')
+            st.markdown("### -------. ")
+            st.subheader('# Celiac disease ')
 
-
+        elif about_selection == 'Introduction to our menu':
+            st.markdown('''
+                     <p align="center">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/allergy.jpg" width="30%" alt="Wines TEST">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+            st.markdown ('# Cheese')
+            st.markdown('## Mozzarella')
+            st.markdown("###  ----- ")
+            st.markdown('## Stracciatella')
+            st.markdown("###  ----- ")
+            st.markdown('## "Grana" Cheese ')
+            st.markdown("## Percorino Romano")
+            st.markdown("###  ----- ")
+            st.markdown('# Meat section')
+            st.markdown('## Prosciutto di Parma')
+            st.markdown("###  ----- ")
+            st.markdown ('## Mortadella di Bologna')
+            st.markdown("###  ----- ")
+            st.markdown('## Panceta')
+            st.markdown("###  ----- ")
+            st.markdown('## ´Ndjua')
+            st.markdown("###  ----- ")
+            st.markdown('# Sauces and condiments')
+            st.markdown('## Gremolata')
+            st.markdown("###  ----- ")
+            st.markdown('## Kampot-pepper')
+            st.markdown("###  ----- ")
+                  
+      
 
 ## my side
 
