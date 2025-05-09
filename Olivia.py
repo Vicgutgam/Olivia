@@ -12,6 +12,7 @@ from PIL import Image
 #El request me va a ayudar a importar el archivo de la URL y así permitirme descargarme el archivo una vez pulse el botón
 import requests
 
+##Comida
 
 
 
@@ -309,23 +310,32 @@ with st.spinner('Un attimo per favore'):
             st.markdown("###  ----- ")
             st.markdown('# Sauces and condiments')
             st.markdown('## Gremolata')
-            ('''
-                     <p align="right">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Grana.jpg" width="25%" alt="">
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.markdown('''
+                     
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Gremolada.jpg" width="50%" alt="Gremolata.">
   <br>
 </p>
 ''', unsafe_allow_html=True)
-            ('''
-                     <p align="center">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Grana.jpg" width="25%" alt="">
-  <br>
-</p>
-''', unsafe_allow_html=True)
-            st.markdown("####  Gremolata is a fresh Italian mixture of finely chopped parsley, grated lemon zest and garlic. ")
+                
+            with col2:
+                st.markdown("####  Gremolata is a fresh Italian mixture of finely chopped parsley, grated lemon zest and garlic. ")
+
+
             st.markdown('## Kampot-pepper')
-            st.markdown("#### It's a unique and versatile spice from Cambodia that can be used in a wide variety of dishes. Its unique flavor and aroma make it a popular ingredient in gourmet cooking, particularly in French and European dishes. ")
-                  
-      
+            pepper1, pepper2, pepper3 = st.columns(3)
+            with pepper1:
+                st.markdown('''
+                     
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Dried_red_Kampot_peppercorns.jpg" width="50%" alt="Gremolata.">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+            with pepper2:
+                st.markdown("#### It's a unique and versatile spice from Cambodia that can be used in a wide variety of dishes. Its unique flavor and aroma make it a popular ingredient in gourmet cooking, particularly in French and European dishes. ")
+            
+
 
 ## my side
 
