@@ -12,6 +12,12 @@ from PIL import Image
 #El request me va a ayudar a importar el archivo de la URL y así permitirme descargarme el archivo una vez pulse el botón
 import requests
 
+
+
+
+
+
+
 ### Games
 questions = [
     {
@@ -243,13 +249,49 @@ with st.spinner('Un attimo per favore'):
         elif about_selection == 'Introduction to our menu':
             st.markdown('''
                      <p align="center">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/allergy.jpg" width="30%" alt="Wines TEST">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/productos.jpg" width="50%" alt="productos">
   <br>
 </p>
 ''', unsafe_allow_html=True)
             st.markdown ('# Cheese')
+            st.markdown('''
+                     <p align="center">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Grana.jpg" width="25%" alt="">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+            st.markdown('''
+                     <p align="center">
+  <img src="" width="30%" alt="Parmesano reggiano">
+  <br>
+</p>
+''', unsafe_allow_html=True)
             st.markdown('## Mozzarella')
-            st.markdown("###  ----- ")
+            st.markdown("####  The name ""mozzarella"" comes from the Italian verb ""mozzare,"" which means to cut, referring to how the cheese balls are manually cut at the end of the process. It encompasses a variety of fresh, soft, and elastic spun-curd cheeses, traditionally made from buffalo milk, but also commonly from cow's milk. ")
+            data = {
+    "Cheese": ["Mozzarella di Bufala", "Fior di Latte", "Burrata"],
+    "Milk type": ["Buffalo", "Cow", "Cow or buffalo"],
+    "Flavor": ["Intense, tangy", "Mild, milky", "Very mild and fresh"],
+    "Texture": [
+        "Creamy and elastic",
+        "Firm and moist",
+        "Firm outside, creamy inside"
+    ],
+    "Best use": [
+        "Salads, gourmet pizzas",
+        "Everyday cooking, pizzas",
+        "Cold dishes, center of the plate"
+    ]
+}
+
+# Convert to DataFrame
+            df = pd.DataFrame(data)
+
+# Title
+            st.markdown("### Comparison of Mozzarella Types")
+
+# Display table
+            st.table(df)
             st.markdown('## Stracciatella')
             st.markdown("###  ----- ")
             st.markdown('## "Grana" Cheese ')
@@ -267,9 +309,21 @@ with st.spinner('Un attimo per favore'):
             st.markdown("###  ----- ")
             st.markdown('# Sauces and condiments')
             st.markdown('## Gremolata')
-            st.markdown("###  Gremolata is a fresh Italian mixture of finely chopped parsley, grated lemon zest and garlic. ")
+            ('''
+                     <p align="right">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Grana.jpg" width="25%" alt="">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+            ('''
+                     <p align="center">
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Grana.jpg" width="25%" alt="">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+            st.markdown("####  Gremolata is a fresh Italian mixture of finely chopped parsley, grated lemon zest and garlic. ")
             st.markdown('## Kampot-pepper')
-            st.markdown("### It's a unique and versatile spice from Cambodia that can be used in a wide variety of dishes. Its unique flavor and aroma make it a popular ingredient in gourmet cooking, particularly in French and European dishes. ")
+            st.markdown("#### It's a unique and versatile spice from Cambodia that can be used in a wide variety of dishes. Its unique flavor and aroma make it a popular ingredient in gourmet cooking, particularly in French and European dishes. ")
                   
       
 
