@@ -12,126 +12,12 @@ from PIL import Image
 #El request me va a ayudar a importar el archivo de la URL y así permitirme descargarme el archivo una vez pulse el botón
 import requests
 
-##Comida
-
-
-
-
-
-
-### Games
-questions = [
-    {
-        "question": "What is the main grape used in red Bordeaux wines?",
-        "options": ["Merlot", "Pinot Noir", "Zinfandel"],
-        "answer": "Merlot"
-    },
-    {
-        "question": "Which country is the largest producer of wine?",
-        "options": ["France", "Italy", "Spain"],
-        "answer": "Italy"
-    },
-    {
-        "question": "What does 'terroir' refer to in wine?",
-        "options": ["A wine's age", "The region’s environmental factors", "Fermentation method"],
-        "answer": "The region’s environmental factors"
-    },
-    {
-        "question": "Which of the following is a white grape variety?",
-        "options": ["Chardonnay", "Cabernet Sauvignon", "Syrah"],
-        "answer": "Chardonnay"
-    },
-    {
-        "question": "What is rosé wine made from?",
-        "options": ["White grapes only", "Red grapes with short skin contact", "Mixing red and white wines"],
-        "answer": "Red grapes with short skin contact"
-    },
-    {
-        "question": "Which region is famous for Chianti wine?",
-        "options": ["Tuscany", "Bordeaux", "Rioja"],
-        "answer": "Tuscany"
-    },
-    {
-        "question": "What is the ideal temperature to serve red wine?",
-        "options": ["8°C", "16–18°C", "25°C"],
-        "answer": "16–18°C"
-    },
-    {
-        "question": "Which wine is typically sweet?",
-        "options": ["Port", "Cabernet Sauvignon", "Barolo"],
-        "answer": "Port"
-    },
-    {
-        "question": "Which country is known for Malbec wine?",
-        "options": ["Argentina", "Germany", "Portugal"],
-        "answer": "Argentina"
-    },
-    {
-        "question": "Which of these wines is sparkling?",
-        "options": ["Chablis", "Chianti", "Prosecco"],
-        "answer": "Prosecco"
-    },
-    {
-        "question": "What gives red wine its color?",
-        "options": ["Grape juice", "Grape skins", "Barrel aging"],
-        "answer": "Grape skins"
-    },
-    {
-        "question": "Which wine is traditionally used in cooking coq au vin?",
-        "options": ["White wine", "Red wine", "Rosé"],
-        "answer": "Red wine"
-    },
-    {
-        "question": "Which of the following is not a wine region in France?",
-        "options": ["Champagne", "Napa Valley", "Burgundy"],
-        "answer": "Napa Valley"
-    },
-    {
-        "question": "What does 'vintage' mean in wine?",
-        "options": ["Age of the barrel", "The year the grapes were harvested", "Type of grape used"],
-        "answer": "The year the grapes were harvested"
-    },
-    {
-        "question": "What does a sommelier do?",
-        "options": ["Grows grapes", "Designs wine labels", "Selects and serves wine"],
-        "answer": "Selects and serves wine"
-    },
-    {
-        "question": "Which grape is used to make Rioja wine?",
-        "options": ["Tempranillo", "Cabernet Franc", "Grenache"],
-        "answer": "Tempranillo"
-    },
-    {
-        "question": "Which wine is made in the Champagne region of France?",
-        "options": ["Cava", "Prosecco", "Champagne"],
-        "answer": "Champagne"
-    },
-    {
-        "question": "Which of these wines is fortified?",
-        "options": ["Sherry", "Beaujolais", "Moscato"],
-        "answer": "Sherry"
-    },
-    {
-        "question": "What is the main grape used in Barolo wine?",
-        "options": ["Nebbiolo", "Sangiovese", "Zinfandel"],
-        "answer": "Nebbiolo"
-    },
-    {
-        "question": "What is the alcohol range of most table wines?",
-        "options": ["5–7%", "8–15%", "16–20%"],
-        "answer": "8–15%"
-    }
-]
-
-
-
-
 
 # Configuración de la página
 st.set_page_config(
     page_title='Olivia Academy',
-    page_icon="",
-    layout='wide', )
+    page_icon="🫒",
+    layout='wide' )
 
 
 # Imagen para el fondo de pantalla
@@ -285,20 +171,23 @@ with st.spinner('Un attimo per favore'):
     ]
 }
 
-# Convert to DataFrame
+                # Convert to DataFrame
             df = pd.DataFrame(data)
 
-# Title
+                # Title
             st.markdown("### Comparison of Mozzarella Types")
 
-# Display table
+                # Display table
             st.table(df)
+
             st.markdown('## Stracciatella')
-            st.markdown("###  ----- ")
+            st.markdown("#### Stracciatella is a soft, creamy Italian cheese made from shredded fresh mozzarella mixed with cream. It has a delicate, milky flavor and a luxurious texture that's both stringy and smooth. Originating from the Puglia region in southern Italy, it's best known as the filling of burrata cheese. Stracciatella is typically served on its own with olive oil and bread, used as a topping on pizzas, or added to salads and cold pasta dishes. ")
             st.markdown('## "Grana" Cheese ')
-            st.markdown("###  ----- ")
+            st.markdown("#### Grana cheeses are a family of hard, long-aged cheeses with a grainy texture (hence the name ""grana,"" which means grain in Italian). They are made primarily from partially skimmed cow's milk and have an intense, umami, and slightly salty flavor that intensifies with age. At Olivia we have two types, Grana Padano and Parmigiano Reggiano.")
+            st.markdown("#### Parmigiano Reggiano, often called the ""King of Cheeses"", is a hard, aged cheese made from raw cow's milk. It has a crumbly, granular texture and a rich, savory flavor with nutty and umami notes that become more pronounced as it matures—typically between 12 and 36 months. Produced under strict DOP regulations in northern Italy (mainly in Emilia-Romagna), Parmigiano Reggiano is ideal grated over pasta, risottos, soups, or enjoyed in chunks with balsamic vinegar or cured meats.")
+            st.markdown("#### Grana Padano is a hard, aged cow’s milk cheese similar to Parmigiano Reggiano but generally milder in flavor and less salty. It has a slightly grainy texture and is aged for a minimum of 9 months, with some versions reaching 20 months. Made in the Po Valley region of northern Italy, Grana Padano is protected by a DOP label but follows less strict production standards than Parmigiano. It’s a versatile cheese that can be grated, sliced, or eaten on its own, and it's often used as a more affordable alternative to Parmigiano Reggiano.")
             st.markdown("## Percorino Romano")
-            st.markdown("###  ----- ")
+            st.markdown("#### Pecorino Romano is a hard, salty Italian cheese made from sheep’s milk. It has a sharp, tangy flavor and a crumbly texture, especially when aged beyond 8 months. Though associated with Rome, most Pecorino Romano is actually produced in Sardinia. It is an essential ingredient in classic Roman dishes such as carbonara, cacio e pepe, and amatriciana. Thanks to its bold taste and high salt content, it's best used grated to season pastas, soups, and roasted vegetables. ")
             st.markdown('# Meat section')
             st.markdown('## Prosciutto di Parma')
             st.markdown("###  ----- ")
