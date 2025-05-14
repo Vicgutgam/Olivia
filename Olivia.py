@@ -141,12 +141,7 @@ with st.spinner('Un attimo per favore'):
 </p>
 ''', unsafe_allow_html=True)
             st.markdown ('# Cheese')
-            st.markdown('''
-                     <p align="center">
-  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Grana.jpg" width="25%" alt="">
-  <br>
-</p>
-''', unsafe_allow_html=True)
+            
             st.markdown('''
                      <p align="center">
   <img src="" width="30%" alt="Parmesano reggiano">
@@ -179,6 +174,30 @@ with st.spinner('Un attimo per favore'):
 
                 # Display table
             st.table(df)
+            moz1, moz2, moz3 = st.columns(3)
+            with moz1:
+                st.markdown('''
+                     
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/mozarrela%20di%20buffala.jpg" width="50%" alt="Mozarrela di buffala.">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+            with moz3:
+                st.markdown('''
+                     
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/mozzarella-burrata-recettes-tomates-confites-olives.jpeg" width="50%" alt="Mozarrela di burrata.">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+            with moz2:
+                st.markdown('''
+                     
+  <img src="https://raw.githubusercontent.com/Vicgutgam/Olivia/refs/heads/main/Im%C3%A1genes/Fior-di-Latte-e1655353087386.jpeg" width="50%" alt="Mozarrela fior di late.">
+  <br>
+</p>
+''', unsafe_allow_html=True)
+                
+                
 
             st.markdown('## Stracciatella')
             st.markdown("#### Stracciatella is a soft, creamy Italian cheese made from shredded fresh mozzarella mixed with cream. It has a delicate, milky flavor and a luxurious texture that's both stringy and smooth. Originating from the Puglia region in southern Italy, it's best known as the filling of burrata cheese. Stracciatella is typically served on its own with olive oil and bread, used as a topping on pizzas, or added to salads and cold pasta dishes. ")
